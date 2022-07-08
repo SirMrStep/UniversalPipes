@@ -1,0 +1,8 @@
+name: UniversalPipes
+main: me.steep.universalpipes.UniversalPipes
+version: 0.0.1
+api-version: 1.19
+depend: [ProtocolLib]
+commands:
+  getpipes:
+    description: Gives pipes.
