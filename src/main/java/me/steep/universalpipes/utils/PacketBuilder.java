@@ -3,7 +3,6 @@ package me.steep.universalpipes.utils;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.Pair;
-import com.comphenix.protocol.wrappers.WrappedAttribute;
 import com.comphenix.protocol.wrappers.WrappedDataWatcher;
 import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
