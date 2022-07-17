@@ -68,9 +68,10 @@ public class Pipe {
                 .watcher();
 
         int radius = Bukkit.getViewDistance() * 16;
-        NamespacedKey entKey = new NamespacedKey(UniversalPipes.getInst(), "entities");
-        NamespacedKey blockKey = new NamespacedKey(UniversalPipes.getInst(), "pipe");
+
+        NamespacedKey entKey = UniversalPipes.getEntityKey();
         CustomBlockData blockData = new CustomBlockData(block, UniversalPipes.getInst());
+
         block.setType(Material.BARRIER);
 
         block.getWorld().getNearbyEntities(block.getLocation(), radius, radius, radius, entity -> entity instanceof Player)
@@ -98,7 +99,7 @@ public class Pipe {
 
                             ));
 
-                    blockData.set(blockKey, DataType.STRING, type.toString());
+                    blockData.set(UniversalPipes.getPipeKey(), DataType.STRING, type.toString());
 
                 });
 
